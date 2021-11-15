@@ -15,6 +15,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Link from '@mui/material/Link';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -186,6 +188,21 @@ export default function HeadBar() {
                     </Search>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                        <Link
+                            variant="body2"
+                            href="https://github.com/laegjarn-orz"
+                            color="inherit"
+                        >
+                            <IconButton
+                                size="large"
+                                edge="end"
+                                aria-label="github page"
+                                aria-haspopup="true"
+                                color="inherit"
+                            >
+                                <GitHubIcon />
+                            </IconButton>
+                        </Link>
                         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
                             <Badge badgeContent={4} color="error">
                                 <MailIcon />
@@ -226,8 +243,8 @@ export default function HeadBar() {
                     </Box>
                 </Toolbar>
             </AppBar>
-            { renderMobileMenu }
-            { renderMenu }
+            {renderMobileMenu}
+            {renderMenu}
         </Box>
     );
 }
