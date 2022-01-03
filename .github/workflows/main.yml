@@ -40,6 +40,7 @@ jobs:
         run: |
           pnpm build
           echo "build finish"
+          echo ${{ github.ref }}
           
       - name: Archive build
         uses: actions/upload-artifact@v2
