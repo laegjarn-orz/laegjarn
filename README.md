@@ -1,6 +1,6 @@
 # Lægjarn
 
-https://laegjarn.xyz/
+https://seeyoudusk.xyz/
 
 ## dev
 - node.js
